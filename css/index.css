@@ -113,7 +113,7 @@ body {
   height: 100%;
   width: 100%;
   background: url("../img/background07.png");
-  background-size: 70%;
+  background-size: 40%;
   perspective: 100px;
   overflow-y: hidden;
   overflow-x: hidden;
