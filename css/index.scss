@@ -45,6 +45,8 @@
       body{
         display: flex;
         flex-direction: column;
+        overflow-y: hidden;
+        overflow-x: hidden;
       }
 
       .glow{
@@ -90,7 +92,8 @@
         position: absolute;
         height: 100vh;
         z-index: -1;
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
    
 
         .bgtrack{
@@ -100,6 +103,8 @@
             flex-direction: row;
             gap: 0px;
             animation: scroll 10s linear infinite;
+            overflow-y: hidden;
+            overflow-x: hidden;
 
 
 .slide{
@@ -108,6 +113,8 @@
     background: url('../img/background07.png');
     background-size: 70%;
     perspective: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
         }
@@ -123,7 +130,8 @@
     align-items: center;
     flex-direction: column;
     padding: 0px;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
 
    
