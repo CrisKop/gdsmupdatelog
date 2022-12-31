@@ -1,0 +1,198 @@
+   
+:root{
+  --glowcolor: lightblue;
+  --glowcolorsec: rgb(102, 203, 236);
+}
+
+   @font-face{
+      font-family: "Pusab";
+      src: url("../img/PUSAB___.otf")
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      html{
+        height: 100vh;
+        width: 100%;
+      }
+
+      body{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .glow{
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
+.discord{
+  left: 85vw;
+  top: 55vh;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: end;
+  width: 30vh;
+  font-family: "Pusab";
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white; 
+  text-align: center;
+  .discordcontainer{
+    display: flex;
+    flex-direction: column;
+  .discordbtn{
+    border-radius: 50%;
+    background: url('../img/discordlogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 30vh;
+    margin: 10px;
+    transition: all 0.5s;
+  }
+  .discordbtn:hover{
+    width: 32vh;
+    height: 32vh;
+  }
+}
+}
+
+
+      .backgroundslider{
+        position: absolute;
+        height: 100vh;
+        z-index: -1;
+        overflow: hidden;
+   
+
+        .bgtrack{
+            height: 100%;
+            width: calc(220px * 18);
+            display: flex;
+            flex-direction: row;
+            gap: 0px;
+            animation: scroll 10s linear infinite;
+
+
+.slide{
+    height: 100%;
+    width: 100%;
+    background: url('../img/background07.png');
+    background-size: 70%;
+    perspective: 100px;
+}
+
+        }
+      }
+
+
+
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    overflow: hidden;
+
+
+   
+    .main{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 5px;
+      justify-content:top;
+      overflow: scroll;
+      .changes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: left;
+        justify-content: center;
+        padding: 0 11%;
+      }
+      .change{
+        display: flex;
+        align-items: top;
+        p{
+        font-family: "Pusab";
+        font-size: 25px;
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: white; 
+        }
+      }
+h1{
+  padding-top: 10px;
+  text-align: center;
+font-family: "Pusab";
+font-size: 40px;
+-webkit-text-stroke: 1px black;
+-webkit-text-fill-color: lightblue;
+}
+h2{
+  text-align: center;
+font-family: "Pusab";
+font-size: 25px;
+-webkit-text-stroke: 1px black;
+-webkit-text-fill-color: white;
+}
+h3{
+  text-align: center;
+font-family: "Pusab";
+font-size: 30px;
+-webkit-text-stroke: 1px black;
+-webkit-text-fill-color: white;
+}
+h4{
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+font-family: "Pusab";
+font-size: 30px;
+-webkit-text-stroke: 1px black;
+-webkit-text-fill-color: gold;
+}
+    }
+  }
+
+
+      
+
+
+
+   
+
+
+      @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        50%{
+            transform: translateX(calc(-170px * 5));
+        }
+      }
+
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--glowcolorsec), 0 0 20px var(--glowcolorsec), 0 0 25px var(--glowcolorsec), 0 0 30px var(--glowcolorsec), 0 0 35px var(--glowcolorsec);
+        }
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 15px var(--glowcolor), 0 0 20px var(--glowcolor), 0 0 25px var(--glowcolor), 0 0 30px var(--glowcolor), 0 0 35px var(--glowcolor), 0 0 40px var(--glowcolor);
+        }
+      }
+
+      @media (min-width:768px) {
+       
+
+      }
